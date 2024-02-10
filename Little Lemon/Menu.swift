@@ -87,12 +87,25 @@ struct Menu: View {
         .toolbar(.hidden, for: .tabBar)
     }
     
+    /*
     func buildPredicate() -> NSPredicate {
         if (searchText.isEmpty) {
             return NSPredicate(value: true)
         } else {
             return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
         }
+    }
+     */
+    
+    func buildPredicate() -> NSCompoundPredicate {
+        let search = searchText == "" ? NSPredicate(value: true) : NSPredicate(format: "title CONTAINS[cd] %@", searchText)
+        let starters = !startersOn ? NSPredicate(format: "category != %@", "starters") : NSPredicate(value: true)
+        let mains = !mainsOn ? NSPredicate(format: "category != %@", "mains") : NSPredicate(value: true)
+        let desserts = !dessertsOn ? NSPredicate(format: "category != %@", "desserts") : NSPredicate(value: true)
+        let drinks = !drinksOn ? NSPredicate(format: "category != %@", "drinks") : NSPredicate(value: true)
+
+        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [search, starters, mains, desserts, drinks])
+        return compoundPredicate
     }
     
     func buildSortDescriptors() -> [NSSortDescriptor] {
