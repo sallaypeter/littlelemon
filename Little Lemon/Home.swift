@@ -12,15 +12,15 @@ struct Home: View {
     var body: some View {
         // to change the tab programatically just change the selectedTab to the tag
         TabView(selection: $selectedTab) {
-            Menu()
-                .tabItem { Label("Menu", systemImage: "list.dash") }
+            Menu(selectedTab: $selectedTab)
+                //.tabItem { Label("Menu", systemImage: "list.dash") }
                 .tag("Menu")
-            UserProfile()
-                .tabItem { Label("Profile", systemImage: "square.and.pencil") }
+            UserProfile(selectedTab: $selectedTab)
+                //.tabItem { Label("Profile", systemImage: "square.and.pencil") }
                 .tag("Profile")
         }
+        .toolbar(.hidden, for: .tabBar)
         .navigationBarBackButtonHidden(true)
-        
     }
 }
 

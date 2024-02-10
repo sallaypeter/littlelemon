@@ -7,18 +7,6 @@
 
 import SwiftUI
 
-func validateEmail(email: String) -> Bool {
-    let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-    return emailPredicate.evaluate(with: email)
-}
-
-func validatePassword(_ password: String) -> Bool {
-    let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
-    let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
-    return passwordPredicate.evaluate(with: password)
-}
-
 struct Onboarding: View {
     @State private var isLoggedIn:Bool = UserDefaults.standard.bool(forKey: kIsLoggedIn)
     @State private var firstName:String = (UserDefaults.standard.string(forKey: kFirstName) ?? "")
@@ -32,14 +20,59 @@ struct Onboarding: View {
                 NavigationLink(destination: Home(), isActive: $isLoggedIn) {
                     EmptyView()
                 }
+                Image("Logo")
+                    .padding([.bottom], 10)
+                HeroWrapper()
                 VStack(alignment: .leading) {
-                    Text("First Name")
+                    // First Name
+                    HStack {
+                        Text("First name")
+                            .font(Font.custom("Karla-Bold", size: 12))
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(.gray)
+                        Spacer()
+                    }
+                    .padding(.top, 5.0)
+                    .padding(.bottom, 0.0)
                     TextField("First Name", text: $firstName)
-                    Text("Last Name")
+                        .textFieldStyle(.roundedBorder)
+                        .font(Font.custom("Karla-Bold", size: 14))
+                        .foregroundColor(.littleLemonPrimaryGreen)
+                        .padding(.top, 0)
+                    // Last Name
+                    HStack {
+                        Text("Last name")
+                            .font(Font.custom("Karla-Bold", size: 12))
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(.gray)
+                        Spacer()
+                    }
+                    .padding(.top, 5.0)
+                    .padding(.bottom, 0.0)
                     TextField("Last Name", text: $lastName)
-                    Text("Email Name")
+                        .textFieldStyle(.roundedBorder)
+                        .font(Font.custom("Karla-Bold", size: 14))
+                        .foregroundColor(.littleLemonPrimaryGreen)
+                        .padding(.top, 0)
+                    // Email
+                    HStack {
+                        Text("Email")
+                            .font(Font.custom("Karla-Bold", size: 12))
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(.gray)
+                        Spacer()
+                    }
+                    .padding(.top, 5.0)
+                    .padding(.bottom, 0.0)
                     TextField("Email", text: $email)
+                        .textFieldStyle(.roundedBorder)
+                        .font(Font.custom("Karla-Bold", size: 14))
+                        .foregroundColor(.littleLemonPrimaryGreen)
+                        .keyboardType(.emailAddress)
+                        .padding(.top, 0)
+
                 }
+                .padding(10.0)
                 Button("Register") {
                     if (!firstName.isEmpty && !lastName.isEmpty && !email.isEmpty) {
                         if (validateEmail(email: email)) {
@@ -55,9 +88,11 @@ struct Onboarding: View {
                         showEmptyFieldAlert = true
                     }
                 }
+                .buttonStyle(YellowButtonStyle())
+                Spacer()
             }
             // VStack modifiers
-            .padding()
+            .padding(0.0)
             .alert("Invalid Form Data", isPresented: $showEmptyFieldAlert) {
                 Button("OK") {}
             } message: {
@@ -72,6 +107,9 @@ struct Onboarding: View {
                 if (UserDefaults.standard.bool(forKey: kIsLoggedIn)) {
                     isLoggedIn = true
                 }
+                firstName = (UserDefaults.standard.string(forKey: kFirstName) ?? "")
+                lastName = (UserDefaults.standard.string(forKey: kLastName) ?? "")
+                email = (UserDefaults.standard.string(forKey: kEmail) ?? "")
             }
         }
     }

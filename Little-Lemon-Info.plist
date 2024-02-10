@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/MarkaziText.ttf</string>
+		<string>Fonts/Karla-Bold.ttf</string>
+		<string>Fonts/Karla-BoldItalic.ttf</string>
+		<string>Fonts/Karla-ExtraBold.ttf</string>
+		<string>Fonts/Karla-ExtraBoldItalic.ttf</string>
+		<string>Fonts/Karla-ExtraLight.ttf</string>
+		<string>Fonts/Karla-ExtraLightItalic.ttf</string>
+		<string>Fonts/Karla-Italic.ttf</string>
+		<string>Fonts/Karla-Light.ttf</string>
+		<string>Fonts/Karla-LightItalic.ttf</string>
+		<string>Fonts/Karla-Medium.ttf</string>
+		<string>Fonts/Karla-MediumItalic.ttf</string>
+		<string>Fonts/Karla-Regular.ttf</string>
+		<string>Fonts/Karla-SemiBold.ttf</string>
+		<string>Fonts/Karla-SemiBoldItalic.ttf</string>
+		<string>Fonts/Karla.ttf</string>
+		<string>Fonts/MarkaziText-Bold.ttf</string>
+		<string>Fonts/MarkaziText-Medium.ttf</string>
+		<string>Fonts/MarkaziText-Regular.ttf</string>
+		<string>Fonts/MarkaziText-SemiBold.ttf</string>
+		<string>Fonts/MarkaziText.ttf</string>
+	</array>
+</dict>
+</plist>

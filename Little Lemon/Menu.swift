@@ -8,51 +8,83 @@
 import SwiftUI
 
 struct Menu: View {
+    @Binding var selectedTab: String
     @State private var searchText: String = ""
     @Environment(\.managedObjectContext) private var viewContext
-    /*
+    @State var startersOn: Bool = true
+    @State var mainsOn: Bool = true
+    @State var dessertsOn: Bool = true
+    @State var drinksOn: Bool = true
+
     @FetchRequest(
-            sortDescriptors: buildSortDescriptors(),
-            predicate: nil,
-            animation: .default)
-    private var dishes: FetchedResults<Dish>
-     */
+        sortDescriptors: []
+    ) var items: FetchedResults<Dish>
+
     @State private var jsonFetched: Bool = false
     var body: some View {
-        VStack {
-            Text("Little Lemon")
-            Text("Chicago")
-            Text("Your local Mediterranian Bistro")
-            TextField("Search menu", text: $searchText)
+        VStack(spacing: 0.0) {
+            VStack(spacing: 0.0) {
+                HStack(alignment: .center) {
+                    Rectangle()
+                        .frame(width: 50, height: 50)
+                        .foregroundStyle(.white)
+                        .padding([.leading], 20)
+                    Spacer()
+                    Image("Logo")
+                        .padding([.bottom], 20)
+                    Spacer()
+                    Button {
+                        selectedTab = "Profile"
+                    } label: {
+                        Image("Profile")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                    }
+                    .padding([.bottom,.trailing], 20)
+                }
+                .background(.white)
+                HeroWrapper()
+                HStack {
+                    Image(systemName: "magnifyingglass.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundStyle(.white)
+                    TextField("Search menu", text: $searchText)
+                        .textFieldStyle(.roundedBorder)
+                }
+                .padding(10)
+            }
+            .background(.littleLemonPrimaryGreen)
+            .padding(0.0)
+            .frame(minHeight: 375)
+            MenuBreakdown(startersOn: $startersOn, mainsOn: $mainsOn, dessertsOn: $dessertsOn, drinksOn: $drinksOn)
             FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {(dishes: [Dish]) in
                 List {
                     ForEach(dishes) { dish in
-                        NavigationLink(destination: ItemDetails(title: dish.title!, price: dish.price!)) {
-                            HStack{
-                                AsyncImage(url: URL(string: dish.image!)) { image in
-                                    image.resizable()
-                                } placeholder: {
-                                    Image(systemName: "fork.knife.circle")
-                                }
-                                .frame(width: 50, height: 50)
-                                Text(dish.title!)
-                                    .font(.system(size: 16, weight: .bold))
-                                Spacer()
-                                Text("$\(dish.price!)")
-                                    .foregroundColor(.gray)
-                                    .font(.callout)
-                            }
+                        ZStack {
+                            NavigationLink(destination: ItemDetails(title: dish.title!, description: dish.comment!, price: dish.price!, image: dish.image!)) {
+                                EmptyView()
+                                    .padding(0.0)
+                            }.padding(0.0).opacity(0.0)
+                            MenuItemRow(title: dish.title!, description: dish.comment!, price: dish.price!, image: dish.image!)
+                                .padding(0.0)
                         }
+                        .padding(0.0)
                     }
+                    .padding(0.0)
                 }
+                .padding(0.0)
             }
+            .padding(0.0)
         }
+        .padding(0.0)
         .onAppear() {
-            if (!jsonFetched) {
+            if (!jsonFetched && items.count == 0) {
                 getMenuData()
                 jsonFetched = true
             }
         }
+        .toolbar(.hidden, for: .tabBar)
     }
     
     func buildPredicate() -> NSPredicate {
@@ -99,5 +131,5 @@ struct Menu: View {
 }
 
 #Preview {
-    Menu()
+    Menu(selectedTab: .constant(""))
 }

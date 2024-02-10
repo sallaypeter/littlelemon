@@ -15,14 +15,23 @@
 		7ED906F72B6E41A500E1F9DD /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906F62B6E41A500E1F9DD /* Menu.swift */; };
 		7ED906F92B6E4A8F00E1F9DD /* LittleLemonUIStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906F82B6E4A8F00E1F9DD /* LittleLemonUIStyles.swift */; };
 		7ED906FB2B6E52F800E1F9DD /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906FA2B6E52F800E1F9DD /* UserProfile.swift */; };
-		7ED906FD2B6E557000E1F9DD /* LittleLemonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906FC2B6E557000E1F9DD /* LittleLemonConstants.swift */; };
-		7ED906FF2B6E685400E1F9DD /* FoodCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906FE2B6E685400E1F9DD /* FoodCategories.swift */; };
+		7ED906FD2B6E557000E1F9DD /* LittleLemonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906FC2B6E557000E1F9DD /* LittleLemonUtils.swift */; };
+		7ED906FF2B6E685400E1F9DD /* MenuBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED906FE2B6E685400E1F9DD /* MenuBreakdown.swift */; };
 		7ED907022B6EAE0D00E1F9DD /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED907002B6EAE0C00E1F9DD /* FetchedObjects.swift */; };
 		7ED907032B6EAE0D00E1F9DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED907012B6EAE0D00E1F9DD /* Persistence.swift */; };
 		7ED907052B6EAF1700E1F9DD /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED907042B6EAF1700E1F9DD /* MenuItem.swift */; };
 		7ED907072B6EAF9000E1F9DD /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED907062B6EAF9000E1F9DD /* MenuList.swift */; };
 		7ED9070A2B6EC48C00E1F9DD /* LittleLemonDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7ED907082B6EC48B00E1F9DD /* LittleLemonDatabase.xcdatamodeld */; };
 		7ED9070D2B6ED49600E1F9DD /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED9070C2B6ED49600E1F9DD /* ItemDetails.swift */; };
+		7EDC92662B73D491006B88EB /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC92652B73D491006B88EB /* Playground.swift */; };
+		7EDC926A2B73DEEF006B88EB /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC92692B73DEEE006B88EB /* Fonts */; };
+		7EDC926D2B7406DF006B88EB /* HeroSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC926C2B7406DF006B88EB /* HeroSection.swift */; };
+		7EDC926F2B740E0A006B88EB /* HeroWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC926E2B740E0A006B88EB /* HeroWrapper.swift */; };
+		7EDC92712B740FFB006B88EB /* HeroTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC92702B740FFB006B88EB /* HeroTitle.swift */; };
+		7EDC92732B7411AD006B88EB /* HeroSubTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC92722B7411AD006B88EB /* HeroSubTitle.swift */; };
+		7EDC92752B758B47006B88EB /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC92742B758B47006B88EB /* HomeHeader.swift */; };
+		7EDC92772B7590EE006B88EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC92762B7590EE006B88EB /* LaunchScreen.storyboard */; };
+		7EDC92792B7637F7006B88EB /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC92782B7637F7006B88EB /* MenuItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,14 +44,24 @@
 		7ED906F62B6E41A500E1F9DD /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7ED906F82B6E4A8F00E1F9DD /* LittleLemonUIStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonUIStyles.swift; sourceTree = "<group>"; };
 		7ED906FA2B6E52F800E1F9DD /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		7ED906FC2B6E557000E1F9DD /* LittleLemonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonConstants.swift; sourceTree = "<group>"; };
-		7ED906FE2B6E685400E1F9DD /* FoodCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategories.swift; sourceTree = "<group>"; };
+		7ED906FC2B6E557000E1F9DD /* LittleLemonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonUtils.swift; sourceTree = "<group>"; };
+		7ED906FE2B6E685400E1F9DD /* MenuBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBreakdown.swift; sourceTree = "<group>"; };
 		7ED907002B6EAE0C00E1F9DD /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
 		7ED907012B6EAE0D00E1F9DD /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7ED907042B6EAF1700E1F9DD /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		7ED907062B6EAF9000E1F9DD /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		7ED907092B6EC48B00E1F9DD /* LittleLemonDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleLemonDatabase.xcdatamodel; sourceTree = "<group>"; };
 		7ED9070C2B6ED49600E1F9DD /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		7EDC92652B73D491006B88EB /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		7EDC92692B73DEEE006B88EB /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		7EDC926B2B73E09B006B88EB /* Little-Lemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Little-Lemon-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7EDC926C2B7406DF006B88EB /* HeroSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSection.swift; sourceTree = "<group>"; };
+		7EDC926E2B740E0A006B88EB /* HeroWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroWrapper.swift; sourceTree = "<group>"; };
+		7EDC92702B740FFB006B88EB /* HeroTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTitle.swift; sourceTree = "<group>"; };
+		7EDC92722B7411AD006B88EB /* HeroSubTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSubTitle.swift; sourceTree = "<group>"; };
+		7EDC92742B758B47006B88EB /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		7EDC92762B7590EE006B88EB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EDC92782B7637F7006B88EB /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +94,9 @@
 		7E12AF232B6D2CA900D4B742 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				7EDC92762B7590EE006B88EB /* LaunchScreen.storyboard */,
+				7EDC926B2B73E09B006B88EB /* Little-Lemon-Info.plist */,
+				7EDC92692B73DEEE006B88EB /* Fonts */,
 				7ED9070B2B6EC4B500E1F9DD /* Model */,
 				7ED907002B6EAE0C00E1F9DD /* FetchedObjects.swift */,
 				7ED907012B6EAE0D00E1F9DD /* Persistence.swift */,
@@ -83,10 +105,17 @@
 				7ED906F42B6E3F0A00E1F9DD /* Home.swift */,
 				7ED906F62B6E41A500E1F9DD /* Menu.swift */,
 				7ED906FA2B6E52F800E1F9DD /* UserProfile.swift */,
+				7EDC926C2B7406DF006B88EB /* HeroSection.swift */,
+				7EDC926E2B740E0A006B88EB /* HeroWrapper.swift */,
+				7EDC92742B758B47006B88EB /* HomeHeader.swift */,
+				7EDC92702B740FFB006B88EB /* HeroTitle.swift */,
+				7EDC92722B7411AD006B88EB /* HeroSubTitle.swift */,
+				7ED906FE2B6E685400E1F9DD /* MenuBreakdown.swift */,
+				7EDC92782B7637F7006B88EB /* MenuItemRow.swift */,
 				7ED9070C2B6ED49600E1F9DD /* ItemDetails.swift */,
 				7ED906F82B6E4A8F00E1F9DD /* LittleLemonUIStyles.swift */,
-				7ED906FC2B6E557000E1F9DD /* LittleLemonConstants.swift */,
-				7ED906FE2B6E685400E1F9DD /* FoodCategories.swift */,
+				7ED906FC2B6E557000E1F9DD /* LittleLemonUtils.swift */,
+				7EDC92652B73D491006B88EB /* Playground.swift */,
 				7E12AF282B6D2CAA00D4B742 /* Assets.xcassets */,
 				7ED907082B6EC48B00E1F9DD /* LittleLemonDatabase.xcdatamodeld */,
 				7E12AF2A2B6D2CAA00D4B742 /* Preview Content */,
@@ -170,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E12AF2C2B6D2CAA00D4B742 /* Preview Assets.xcassets in Resources */,
+				7EDC92772B7590EE006B88EB /* LaunchScreen.storyboard in Resources */,
 				7E12AF292B6D2CAA00D4B742 /* Assets.xcassets in Resources */,
+				7EDC926A2B73DEEF006B88EB /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,18 +214,25 @@
 			files = (
 				7E45C9542B6E2C710031876A /* Onboarding.swift in Sources */,
 				7ED906F52B6E3F0A00E1F9DD /* Home.swift in Sources */,
+				7EDC92712B740FFB006B88EB /* HeroTitle.swift in Sources */,
+				7EDC92792B7637F7006B88EB /* MenuItemRow.swift in Sources */,
 				7ED906FB2B6E52F800E1F9DD /* UserProfile.swift in Sources */,
 				7ED906F92B6E4A8F00E1F9DD /* LittleLemonUIStyles.swift in Sources */,
-				7ED906FD2B6E557000E1F9DD /* LittleLemonConstants.swift in Sources */,
+				7EDC926F2B740E0A006B88EB /* HeroWrapper.swift in Sources */,
+				7ED906FD2B6E557000E1F9DD /* LittleLemonUtils.swift in Sources */,
 				7ED9070A2B6EC48C00E1F9DD /* LittleLemonDatabase.xcdatamodeld in Sources */,
-				7ED906FF2B6E685400E1F9DD /* FoodCategories.swift in Sources */,
+				7ED906FF2B6E685400E1F9DD /* MenuBreakdown.swift in Sources */,
+				7EDC92752B758B47006B88EB /* HomeHeader.swift in Sources */,
 				7ED906F72B6E41A500E1F9DD /* Menu.swift in Sources */,
 				7E12AF252B6D2CA900D4B742 /* Little_LemonApp.swift in Sources */,
+				7EDC92732B7411AD006B88EB /* HeroSubTitle.swift in Sources */,
 				7ED907052B6EAF1700E1F9DD /* MenuItem.swift in Sources */,
 				7ED907022B6EAE0D00E1F9DD /* FetchedObjects.swift in Sources */,
+				7EDC92662B73D491006B88EB /* Playground.swift in Sources */,
 				7ED9070D2B6ED49600E1F9DD /* ItemDetails.swift in Sources */,
 				7ED907072B6EAF9000E1F9DD /* MenuList.swift in Sources */,
 				7ED907032B6EAE0D00E1F9DD /* Persistence.swift in Sources */,
+				7EDC926D2B7406DF006B88EB /* HeroSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +369,12 @@
 				DEVELOPMENT_TEAM = KM3ESJ6SL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,9 +401,12 @@
 				DEVELOPMENT_TEAM = KM3ESJ6SL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Little-Lemon-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
